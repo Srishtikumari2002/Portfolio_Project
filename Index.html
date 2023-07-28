@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+    referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+
+
+  <div class="hero">
+    <nav class="navbar">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="logo"><a href="Index.html">S<span>rishti</span></a></div>
+          <div class="navigation">
+            <ul class="sidemenu">
+              <li class="list active"><a href="#header"><span class="icon"><ion-icon
+                      name="home-outline"></ion-icon></span><span class="text">Home</span></a></li>
+
+              <li class="list">
+                <a href="#about">
+                  <span class="icon">
+                    <ion-icon name="person-outline"></ion-icon>
+                  </span>
+                  <span class="text">About</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#services">
+                  <span class="icon">
+                    <ion-icon name="laptop-outline"></ion-icon>
+                  </span>
+                  <span class="text">Services</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#portfolio">
+                  <span class="icon">
+                    <ion-icon name="camera-outline"></ion-icon>
+                  </span>
+                  <span class="text">Porfolio</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#contact">
+                  <span class="icon">
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                  </span>
+                  <span class="text">Contacts</span>
+                </a>
+              </li>
+              <div class="indicator"></div>
+              <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+    <div class="parent">
+      <div class="header-text">
+        <p class="my-profession"><span class="typing">Web developer</span></p>
+        <h1>Hello, I'm <span>Srishti Kumari</span></h1>
+        <p>final year B.tech student, Welcome to my Portfolio.</p>
+      </div>
+      <div class="about-col">
+        <img src="images/srishti_photo.jpeg">
+      </div>
+    </div>
+  </div>
+
+  <!-- ----------------about--------------- -->
+  <div id="about">
+    <div class="container2">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/new_srishti (1).jpeg"/>
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>Hello, my name is Srishti. I am currently studying B.Tech in Computer Science and Engineering with
+            Artificial Intelligence at IGDTUW, Delhi. I have experience working as a Campus Ambassador and a web
+            developer.<br>My technical skills include web devlopment, data science, object-oriented programming,
+           CPP and Python. I am passionate about Artificial Intelligence and machine learning and I am always eager
+            to learn new skills. My hobbies include writing, reading, listening to music and painting.</p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+            <p class="tab-links" onclick="opentab('achievements')">Achievements</p>
+          </div>
+
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Web Developer</span><br>Building respnsive web apps</li>
+              <li><span>Python Developer</span><br>Building respnsive web apps with Django</li>
+              <li><span>Technical Content writer</span><br>write technical contents</li>
+              <li><span>AI/ML</span><br>AI/ML enthusiasts</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>2020-Current</span><br>Learned from documentationa and online tutorials</li>
+              <li><span>2022-Current</span><br> Technical Content writer at Codedamn(Ed-tech startup)<br> worked as
+                content writer and concept planner for official website of Befikra(Ed-tech startup)</li>
+              <li><span>2021-Current</span><br>Working on a research paper based AI/ML project</li>
+              <li><span>2021-2022</span><br>Open-source contributor of GWOC 2.0<br> worked on Bhagavad Gita Project
+                under The Gita Initiative Organization</li>
+              <li><span>ongoing</span><br>Open-source contributor of GirlScript 2023<br> Contributed in various projects</li>
+              <li><span>ongoing</span><br>Open-source contributor TimeChain summer of code<br> working on Big Blockers project as Team captain with Svelte, Sveltkit, Tailwind css and Firebase</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2017</span><br>10th<br>CBSE(RSKV Kalyan Vas Delhi-91)<br>CGPA - 10</li>
+              <li><span>2019</span><br>12th<br>CBSE(RSKV Kalyan Vas Delhi-91)<br>Percentage - 89.45%</li>
+              <li><span>2020-Current</span><br>B.tech(Computer Science & Engineering - Artificial
+                Intelligence)<br>Indira Gandhi Delhi Technical University Women,Delhi-91<br>Aggregate CGPA of 4
+                semesters - 8.31</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="achievements">
+            <ol>
+              <li>Rank 1 in AI/ML track - IdeaStrom by IEEE IGDTUW in 2023</li>
+              <li>Linux Foundation LiFT Scholar in 2023</li>
+              <li>Next Generation Women Leaders - Asia Pacific'2023 participant</li>
+              <li>Protege IGDTUW Mentor in jan'23 cohort</li>
+              <li>#Include <Her> Cohort 3.0 participant</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- -------------------services----------- -->
+  <div id="services">
+    <div class="container2">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div class="hi">
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Development</h2>
+          <p>A web developer with a strong background in HTML, CSS, JavaScript in frontend, sql, MySQL, firebase, supabase, APIs in backend, React, NextJS, Svelte, SveltKit, and Python(Flask, Django) in Framework.</p>
+          <a href="https://github.com/Srishtikumari2002">View in Detail</a>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-book"></i>
+          <h2>Content writing</h2>
+          <p>I write about technical subjects in a way that is easy to understand. I am a writer who creates interesting
+            and useful information about technical subjects such as programming, software creation, data analysis, etc.
+          </p>
+          <a href="./blog.html">View in Detail</a>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-microchip"></i>
+          <h2>AI/ML</h2>
+          <p>I am an AI/ML enthusiast with a strong interest in the field. I have experience of working on ML/DL projects based on real problems. Experience in NLP, image processing, Sign language detection, language modelling, etc.</p>
+          <a href="https://github.com/Srishtikumari2002">View in Detail</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- -----------------------Portfolio----------- -->
+  <div id="portfolio">
+    <div class="container2">
+      <h1 class="sub-title">My Projects</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/xyz_airbar.png">
+          <div class="layer">
+            <h3>AirBar</h3>
+            <p>The project AirBar aims to provide users with a simple, fast and secure airline management service.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <div class="work">
+          <img src="images/xyz_url.png">
+          <div class="layer">
+            <h3>Urlroot</h3>
+            <p>Created a url shortner website in Django using Microsoft face recognition API for authentication of
+              admins or staffs and Google safe browsing API to check safety of urls before redirecting.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <!-- <div class="work">
+                <img src="images/xyz_sign.png">
+                <div class="layer">
+                    <h3>ISL gesture detection | ML/DL</h3>
+                    <p>This project aims to improve communication between deaf and hearing communities using gesture recognition techniques, a vision translation system for Indian sign language.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div> -->
+        <div class="work">
+          <img src="images/Cropify.png">
+          <div class="layer">
+            <h3>Cropify</h3>
+            <p>AI based Crop predictor tool to predict the best crop suited in a given weather data, soil conditions, and other relevant factors.
+            </p>
+            <a href="https://millet-data.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="https://github.com/Srishtikumari2002" class="btn">See more</a>
+    </div>
+  </div>
+
+  <!-- -----------------------achievements------------------------ -->
+  <!-- <div class="content">
+    <div class="images">
+      <img src="images/certificates/LiFT_scholarship'23.jpeg" alt="Slide 1" />
+      <img src="images/certificates/codejam_image.jpg" alt="Slide 2" />
+      <img src="images/certificates/GWOC.png" alt="Slide 3" />
+      <img src="images/certificates/ideaStrom_certificate.jpeg" alt="Slide 4" />
+      <img src="images/certificates/IdeaStrom.png" alt="Slide 5" />
+      <img src="images/certificates/ACM.png" alt="Slide 6" />
+      <img src="images/certificates/Protege.png" alt="Slide 7" />
+      <img src="images/certificates/befikra_certifi.png" alt="Slide 8" />
+      <img src="images/certificates/McKinsey_NGWL'23.jpeg" alt="Slide 9" />
+      <img src="images/certificates/NEO certificate.png" alt="Slide 10" />
+      <img src="images/certificates/ShapeAI.png" alt="Slide 11" />
+      <img src="images/certificates/ISP 27 RC App. Cert.png" alt="Slide 12" />
+      <img src="images/certificates/ISP 27 RC Participation Cert.png" alt="Slide 13" />
+      <img src="images/certificates/ISP 27 Winning Team Certificate.png" alt="Slide 14" />
+    </div>
+  </div> -->
+
+  <!-- --------------------contact---------------- -->
+  <div id="contact">
+    <div class="container2">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><a href="mailto:srishtik38@gmail.com" style="text-decoration: none;color: white;"><i
+                class="fa-solid fa-paper-plane"></i>&nbsp;&nbsp;srishtik38@gmail.com</a></p><br />
+          <p><a href="tel:+918766393891" style="text-decoration: none;color: white;"><i
+                class="fa-solid fa-phone-volume"></i>&nbsp;&nbsp;+91-8766393891</a></p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/srishtikumari2002/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/srishti-kumari-2002/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Srishtikumari2002"><i class="fa-brands fa-github"></i></a>
+            <a href="https://twitter.com/siri040202"><i class="fa-brands fa-square-twitter"></i></a>
+          </div>
+          <a href="https://drive.google.com/file/d/1F5jD_SERxT-4nnCF-fakSkF8edu06WVK/view?usp=sharing" download class="btn btn2">Download cv/resume</a>
+        </div>
+        <div class="contact-right" style="max-width: 50%;">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Your email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright @ made by <i class="fa-solid fa-heart"></i> Srishti.</p>
+    </div>
+  </div>
+
+
+
+  <script>
+    const list = document.querySelectorAll('.list');
+    function activeLink() {
+      list.forEach((item) => item.classList.remove('active'));
+      this.classList.add('active');
+    }
+    list.forEach((item) =>
+      item.addEventListener('click', activeLink));
+  </script>
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabName) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabName).classList.add("active-tab");
+    }
+  </script>
+
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }
+  </script>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbznWXa5vzyQCQsWVth5QwKaVAKabEVR0BX9x6i8MvEWRj37Gg_l3cIpOqXcewVasisB/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          msg.innerHTML = "Message sent successfully";
+          setTimeout(function () {
+            msg.innerHTML = " "
+          }, 5000)
+          form.reset();
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+  <script>
+    var typed = new Typed(".typing", {
+      strings: ["", "Web Developer", "AI/ML Engineer", "Python Developer", "Technical Content Writer", "Technology Analyst", "Data Analyst"],
+      typeSpeed: 100,
+      BackSpeed: 60,
+      loop: true
+    })
+  </script>
+
+  <script>
+  const time = 1000; 
+  let index = 0;
+  const container = document.getElementById("slider");
+  const children = document.querySelectorAll(".subImage");
+  const childrenCount = children.length;
+  
+  function slideToNext() {
+    index = (index + 1) % childrenCount;
+    console.log(index);
+    container.style.marginLeft = `-${index * 100}%`;
+  }
+  
+  const pt = window.setInterval(() => {
+    slideToNext();
+  }, time);
+  
+  </script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
+</html>
